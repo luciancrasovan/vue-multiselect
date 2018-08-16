@@ -532,7 +532,6 @@ export default {
           this.search = ''
         } else {
           console.log('this search', this.search)
-          this.search.select();
         }
       }
       /* istanbul ignore else */
