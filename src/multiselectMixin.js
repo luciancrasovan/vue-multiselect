@@ -528,7 +528,12 @@ export default {
         }
 
         /* istanbul ignore else */
-        if (this.clearOnSelect) this.search = ''
+        if (this.clearOnSelect) {
+          this.search = ''
+        } else {
+          console.log('this search', this.search)
+          this.search.select();
+        }
       }
       /* istanbul ignore else */
       if (this.closeOnSelect) this.deactivate()
